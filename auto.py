@@ -6,7 +6,7 @@ import os
 
 def openZoom(zoom_link):
 	print("I am opening browser")
-	webbrowser.open(zoom_link, new=2)
+	os.system(f"""python -m webbrowser -t "{zoom_link}""")
 	
 	enterMeeting()
 
@@ -51,7 +51,6 @@ def enterMeeting():
 		time.sleep(5)
 		
 	print("nothing is true, program will terminate soon")
-
 
 
 #openZoom("youtube.com")

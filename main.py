@@ -2,6 +2,7 @@ import tkinter
 from tkinter import *
 import auto
 import datetime
+import webbrowser
 
 
 
@@ -10,7 +11,7 @@ def start():
 	start.target_minutes = int(time_entry.get()[3:])
 	countdownFunction()
 
-
+#countdowns and then after the countdown finishes it runs the autolaunch
 def countdownFunction():
 	now = datetime.datetime.now()
 	target_time = now.replace(hour=start.target_hour, minute=start.target_minutes, second=0, microsecond=0)
@@ -23,7 +24,8 @@ def countdownFunction():
 		countdown.after(1000,countdownFunction)
 	else:
 		countdown.config(text="Joining Zoom Meeting...")
-		auto.openZoom(f"""{zoom_link.get()}""")
+		print(zoom_link.get())
+		auto.openZoom(f"""{zoom_link.get().strip()}""")
 
 
 window = tkinter.Tk()
