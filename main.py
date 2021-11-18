@@ -1,7 +1,8 @@
 import tkinter
 from tkinter import *
-from auto import openZoom
+import auto
 import datetime
+
 
 
 def start():
@@ -22,7 +23,7 @@ def countdownFunction():
 		countdown.after(1000,countdownFunction)
 	else:
 		countdown.config(text="Joining Zoom Meeting...")
-		openZoom(f"""{zoom_link.get()}""")
+		auto.openZoom(f"""{zoom_link.get()}""")
 
 
 window = tkinter.Tk()
