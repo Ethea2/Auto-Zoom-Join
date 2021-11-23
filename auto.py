@@ -39,6 +39,7 @@ def enterMeeting():
 		time.sleep(2)	
 		launchX, launchY = pyautogui.locateCenterOnScreen('./images/join.PNG')
 		pyautogui.click(launchX, launchY)
+		print("Program finished.")
 
 	elif pyautogui.locateOnScreen('./images/waitingroom.PNG'):
 		print("waiting for the host to let you in, trying again in 5 seconds")
@@ -47,16 +48,5 @@ def enterMeeting():
 
 	else:
 		enterMeeting()
-		print("Could not locate anything, trying again in 5 seconds")
+		print(f"Could not locate anything, trying again in 5 seconds.")
 		time.sleep(5)
-		
-	print("nothing is true, program will terminate soon")
-
-
-#openZoom("youtube.com")
-
-# pyautogui.click(x=1916,y=1050, button="left")
-
-# pyautogui.press("win")
-# pyautogui.write("zoom")
-# pyautogui.press("enter")
