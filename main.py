@@ -30,6 +30,9 @@ def countdownFunction():
 
 window = tkinter.Tk()
 window.geometry("400x200")
+window.title("Auto Zoom Join")
+window.iconbitmap('./images/azj.ico')
+
 
 #Zoom link entry and label
 name_zoom_link = StringVar()
