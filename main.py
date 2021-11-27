@@ -5,7 +5,7 @@ import datetime
 import webbrowser
 
 
-
+#Starts the program. The function in reference to the start button.
 def start():
 	start.target_hour = int(time_entry.get()[0:2])
 	start.target_minutes = int(time_entry.get()[3:])

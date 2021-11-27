@@ -4,6 +4,8 @@ import time
 import os
 
 
+#Parameters: zoom link (or any link)
+#triggers the enterMeeting function to start accomplishing joining meeting tasks automatically
 def openZoom(zoom_link):
 	print("I am opening browser")
 	os.system(f"""python -m webbrowser -t "{zoom_link}""")
