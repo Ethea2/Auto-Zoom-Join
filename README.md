@@ -29,7 +29,3 @@
 
 Suggestions are open! It's just a short shitty python script, so it's not perfect yet. But it works good.
 Bug: When no zoom app is found, program crashes.
-
-<!--
-    ReadMe.md s
--->
